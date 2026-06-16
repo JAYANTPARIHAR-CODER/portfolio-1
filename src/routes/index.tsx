@@ -36,40 +36,7 @@ const tabs = [
 
 import { Sun, Moon } from "lucide-react";
 
-const ornateBorderH = "data:image/svg+xml;utf8," + encodeURIComponent(`
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24">
-    <path d="M 4 24 C 4 12, 10 8, 16 4 C 22 8, 28 12, 28 24 Z" fill="#2b4c7e" stroke="#d4af37" stroke-width="1.5"/>
-    <circle cx="16" cy="4" r="2.5" fill="#f59e0b"/>
-    <circle cx="16" cy="4" r="1" fill="#fff"/>
-    <path d="M 0 16 L 2 18 L 0 20 L -2 18 Z" fill="#d4af37"/>
-    <path d="M 32 16 L 34 18 L 32 20 L 30 18 Z" fill="#d4af37"/>
-    <circle cx="16" cy="18" r="1.5" fill="#d4af37"/>
-  </svg>
-`);
-
-const ornateBorderV = "data:image/svg+xml;utf8," + encodeURIComponent(`
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32">
-    <path d="M 24 4 C 12 4, 8 10, 4 16 C 8 22, 12 28, 24 28 Z" fill="#2b4c7e" stroke="#d4af37" stroke-width="1.5"/>
-    <circle cx="4" cy="16" r="2.5" fill="#f59e0b"/>
-    <circle cx="4" cy="16" r="1" fill="#fff"/>
-    <path d="M 16 0 L 18 2 L 20 0 L 18 -2 Z" fill="#d4af37"/>
-    <path d="M 16 32 L 18 34 L 20 32 L 18 30 Z" fill="#d4af37"/>
-    <circle cx="18" cy="16" r="1.5" fill="#d4af37"/>
-  </svg>
-`);
-
-const ornateCorner = "data:image/svg+xml;utf8," + encodeURIComponent(`
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <rect x="0" y="0" width="24" height="24" fill="none"/>
-    <circle cx="12" cy="12" r="8" fill="#2b4c7e" stroke="#d4af37" stroke-width="1.5"/>
-    <circle cx="12" cy="12" r="3" fill="#f59e0b"/>
-    <circle cx="12" cy="12" r="1" fill="#fff"/>
-    <line x1="0" y1="0" x2="6" y2="6" stroke="#d4af37" stroke-width="1"/>
-    <line x1="24" y1="0" x2="18" y2="6" stroke="#d4af37" stroke-width="1"/>
-    <line x1="0" y1="24" x2="6" y2="18" stroke="#d4af37" stroke-width="1"/>
-    <line x1="24" y1="24" x2="18" y2="18" stroke="#d4af37" stroke-width="1"/>
-  </svg>
-`);
+// Ornate border SVGs removed as requested
 
 function Portfolio() {
   const [active, setActive] = useState<(typeof tabs)[number]["id"]>("about");
@@ -101,24 +68,8 @@ function Portfolio() {
         {/* Ornate outer frame */}
         <div className="relative rounded-2xl p-[2px] bg-gradient-to-br from-gold via-gold-soft to-gold/40 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)]">
           <div className="rounded-2xl bg-maroon-deep p-3 md:p-5">
-            {/* New Ornate Border Container */}
-            <div className={`relative p-6 rounded-xl overflow-hidden border border-gold/40 theme-transition ${theme === 'dark' ? 'theme-dark bg-[#120404]' : 'theme-light bg-[#F4EFE6]'}`}>
-              {/* Ornate Border Strips */}
-              {/* Top border */}
-              <div className="absolute top-0 left-6 right-6 h-6 bg-repeat-x pointer-events-none" style={{ backgroundImage: `url(${ornateBorderH})` }} />
-              {/* Bottom border */}
-              <div className="absolute bottom-0 left-6 right-6 h-6 bg-repeat-x scale-y-[-1] pointer-events-none" style={{ backgroundImage: `url(${ornateBorderH})` }} />
-              {/* Left border */}
-              <div className="absolute left-0 top-6 bottom-6 w-6 bg-repeat-y pointer-events-none" style={{ backgroundImage: `url(${ornateBorderV})` }} />
-              {/* Right border */}
-              <div className="absolute right-0 top-6 bottom-6 w-6 bg-repeat-y scale-x-[-1] pointer-events-none" style={{ backgroundImage: `url(${ornateBorderV})` }} />
-              
-              {/* Corners */}
-              <div className="absolute top-0 left-0 w-6 h-6 pointer-events-none" style={{ backgroundImage: `url(${ornateCorner})` }} />
-              <div className="absolute top-0 right-0 w-6 h-6 pointer-events-none" style={{ backgroundImage: `url(${ornateCorner})` }} />
-              <div className="absolute bottom-0 left-0 w-6 h-6 pointer-events-none" style={{ backgroundImage: `url(${ornateCorner})` }} />
-              <div className="absolute bottom-0 right-0 w-6 h-6 pointer-events-none" style={{ backgroundImage: `url(${ornateCorner})` }} />
-
+            {/* Content Container */}
+            <div className={`relative p-4 md:p-6 rounded-xl overflow-hidden border border-gold/20 theme-transition ${theme === 'dark' ? 'theme-dark bg-[#120404]' : 'theme-light bg-[#F4EFE6]'}`}>
               {/* Inner card layout */}
               <div className="grid lg:grid-cols-[320px_1fr] rounded-lg overflow-hidden border border-gold/30 bg-[var(--theme-bg)] text-[var(--theme-text)]">
                 {/* Sidebar */}
