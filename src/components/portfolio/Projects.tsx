@@ -4,13 +4,22 @@ import { SectionHeader, fade } from "./SectionHeader";
 
 const projects = [
   {
+    name: "Bharat Financial Health Engine (BFHE)",
+    desc: "An India-specific FinTech platform that calculates your Financial Health Score and provides personalized insights, smart budgeting, and debt reduction strategies to help you achieve financial freedom.",
+    features: ["Financial Health Score", "Smart budgeting", "Debt reduction strategies", "Personalized insights"],
+    tech: ["React", "Node.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    stats: { users: "Live", build: "2026" },
+    demo: "https://bfhe.vercel.app/",
+    github: "https://github.com/Divyamjain-git/Bharat-Financial-Health-Engine",
+  },
+  {
     name: "IndiWealth — IGNITE Hackathon",
     desc: "Financial dashboard built at Panjab University IGNITE Hackathon — interactive data visualization and responsive UI. Finalist, 3rd Rank / 100+ teams.",
     features: ["Financial dashboards", "Data visualization", "Responsive UI", "Team-led frontend"],
     tech: ["React", "JavaScript", "Charting", "CSS"],
     stats: { users: "3rd / 100+", build: "2026" },
     demo: "#",
-    github: "https://github.com/JayantParihar",
+    github: "https://github.com/JAYANTPARIHAR-CODER",
   },
   {
     name: "F1 Web Platform",
