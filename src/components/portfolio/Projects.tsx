@@ -4,15 +4,6 @@ import { SectionHeader, fade } from "./SectionHeader";
 
 const projects = [
   {
-    name: "SupplyAI",
-    desc: "AI-powered B2B supplier discovery platform with intelligent search and recommendation systems.",
-    features: ["AI chatbot", "Supplier recommendation", "Smart search", "Responsive UI"],
-    tech: ["React", "Node.js", "AI/ML", "Tailwind"],
-    stats: { users: "Top 20/50", build: "2025" },
-    demo: "#",
-    github: "https://github.com/JAYANTPARIHAR-CODER/Suraksalink-project",
-  },
-  {
     name: "IndiWealth — IGNITE Hackathon",
     desc: "Financial dashboard built at Panjab University IGNITE Hackathon — interactive data visualization and responsive UI. Finalist, 3rd Rank / 100+ teams.",
     features: ["Financial dashboards", "Data visualization", "Responsive UI", "Team-led frontend"],
@@ -38,15 +29,6 @@ const projects = [
     stats: { users: "Live", build: "2025" },
     demo: "https://saini-sweets-u17h.vercel.app/",
     github: "https://github.com/JAYANTPARIHAR-CODER/saini-sweets",
-  },
-  {
-    name: "E-Commerce Platform",
-    desc: "A high-performance online shopping platform featuring real-time state management and optimized rendering workflows.",
-    features: ["React Hooks optimization", "Context API state manager", "15% faster page load speed", "Component modularity"],
-    tech: ["React", "JavaScript", "Tailwind CSS"],
-    stats: { users: "Core Engine", build: "2024" },
-    demo: "#",
-    github: "https://github.com/JayantParihar",
   },
 ];
 
