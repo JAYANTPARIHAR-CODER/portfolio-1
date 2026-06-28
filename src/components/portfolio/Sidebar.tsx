@@ -7,7 +7,7 @@ const socials = [
   { icon: Mail, label: "Email", href: "mailto:jayantparihar170@gmail.com" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jayant-parihar-079158322/" },
   { icon: Github, label: "GitHub", href: "https://github.com/JAYANTPARIHAR-CODER" },
-  { icon: Code2, label: "LeetCode", href: "https://leetcode.com/Jayant" },
+  { icon: Code2, label: "LeetCode", href: "https://leetcode.com/u/Jayant_23/" },
 ];
 
 export function Sidebar({ theme = "dark" }: { theme?: "light" | "dark" }) {

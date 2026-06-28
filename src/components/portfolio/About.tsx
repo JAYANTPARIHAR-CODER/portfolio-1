@@ -63,8 +63,8 @@ export function About() {
             </div>
             <div>
               <div className="text-[0.65rem] tracking-[0.2em] uppercase text-[var(--theme-text-muted)] font-display">LEETCODE ALGORITHMS</div>
-              <a href="https://leetcode.com/Jayant" target="_blank" rel="noreferrer" className="text-sm font-semibold hover:text-[var(--theme-accent)] underline decoration-gold/40 decoration-dotted underline-offset-4 transition-colors">
-                leetcode.com/Jayant
+              <a href="https://leetcode.com/u/Jayant_23/" target="_blank" rel="noreferrer" className="text-sm font-semibold hover:text-[var(--theme-accent)] underline decoration-gold/40 decoration-dotted underline-offset-4 transition-colors">
+                leetcode.com/u/Jayant_23
               </a>
             </div>
           </div>
