@@ -58,7 +58,7 @@ export function Sidebar({ theme = "dark" }: { theme?: "light" | "dark" }) {
         <span className="text-[0.7rem] tracking-[0.3em] text-[var(--theme-accent)] font-display font-semibold transition-all">RESUME</span>
       </motion.a>
 
-      <div className="w-full mt-auto pt-6 border-t border-gold/30">
+      <div className="w-full mt-6 pt-6 border-t border-gold/30">
         <h3 className="text-xs tracking-[0.3em] text-[var(--theme-accent)] font-display mb-4">CONTACT</h3>
         <ul className="space-y-3 text-xs text-[var(--theme-text)]">
           <li className="flex items-center gap-3 justify-center lg:justify-start">
