@@ -6,7 +6,7 @@ import resume from "@/assets/resume.asset.json";
 const socials = [
   { icon: Mail, label: "Email", href: "mailto:jayantparihar170@gmail.com" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jayant-parihar-079158322/" },
-  { icon: Github, label: "GitHub", href: "https://github.com/JayantParihar" },
+  { icon: Github, label: "GitHub", href: "https://github.com/JAYANTPARIHAR-CODER" },
   { icon: Code2, label: "LeetCode", href: "https://leetcode.com/Jayant" },
 ];
 
@@ -69,14 +69,14 @@ export function Sidebar({ theme = "dark" }: { theme?: "light" | "dark" }) {
           </li>
           <li className="flex items-center gap-3 justify-center lg:justify-start">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--theme-accent)]" />
-            <a href="https://www.linkedin.com/in/jayant-parihar-079158322/" target="_blank" rel="noreferrer" className="hover:text-[var(--theme-accent-hover)] transition-colors">
-              linkedin.com/in/jayant-parihar
+            <a href="https://www.linkedin.com/in/jayant-parihar-079158322/" target="_blank" rel="noreferrer" className="hover:text-[var(--theme-accent-hover)] transition-colors text-[11px] xl:text-xs">
+              linkedin.com/in/jayant-parihar-079158322
             </a>
           </li>
           <li className="flex items-center gap-3 justify-center lg:justify-start">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--theme-accent)]" />
-            <a href="https://github.com/JayantParihar" target="_blank" rel="noreferrer" className="hover:text-[var(--theme-accent-hover)] transition-colors">
-              github.com/JayantParihar
+            <a href="https://github.com/JAYANTPARIHAR-CODER" target="_blank" rel="noreferrer" className="hover:text-[var(--theme-accent-hover)] transition-colors">
+              github.com/JAYANTPARIHAR-CODER
             </a>
           </li>
         </ul>
