@@ -12,7 +12,7 @@ const socials = [
 
 export function Sidebar({ theme = "dark" }: { theme?: "light" | "dark" }) {
   return (
-    <aside className="flex flex-col items-center text-center gap-6 p-8 lg:border-r border-gold/30">
+    <aside className="flex flex-col items-center text-center gap-6 p-8 lg:border-r border-gold/30 h-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,9 +58,9 @@ export function Sidebar({ theme = "dark" }: { theme?: "light" | "dark" }) {
         <span className="text-[0.7rem] tracking-[0.3em] text-[var(--theme-accent)] font-display font-semibold transition-all">RESUME</span>
       </motion.a>
 
-      <div className="w-full mt-6 pt-6 border-t border-gold/30">
+      <div className="w-full mt-auto pt-6 border-t border-gold/30">
         <h3 className="text-xs tracking-[0.3em] text-[var(--theme-accent)] font-display mb-4">CONTACT</h3>
-        <ul className="space-y-3 text-sm text-[var(--theme-text)]">
+        <ul className="space-y-3 text-xs text-[var(--theme-text)]">
           <li className="flex items-center gap-3 justify-center lg:justify-start">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--theme-accent)]" />
             <a href="mailto:jayantparihar170@gmail.com" className="hover:text-[var(--theme-accent-hover)] transition-colors">
@@ -69,7 +69,7 @@ export function Sidebar({ theme = "dark" }: { theme?: "light" | "dark" }) {
           </li>
           <li className="flex items-center gap-3 justify-center lg:justify-start">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--theme-accent)]" />
-            <a href="https://www.linkedin.com/in/jayant-parihar-079158322/" target="_blank" rel="noreferrer" className="hover:text-[var(--theme-accent-hover)] transition-colors text-[11px] xl:text-xs">
+            <a href="https://www.linkedin.com/in/jayant-parihar-079158322/" target="_blank" rel="noreferrer" className="hover:text-[var(--theme-accent-hover)] transition-colors">
               linkedin.com/in/jayant-parihar-079158322
             </a>
           </li>
